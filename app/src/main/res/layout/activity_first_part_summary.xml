@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstPartSummaryActivity">
+
+    <ImageView
+        android:id="@+id/inductor_summary_imageView"
+        android:layout_width="140dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/inductors_1" />
+
+    <ImageView
+        android:id="@+id/inductor_summary_flat_imageView"
+        android:layout_width="107dp"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/inductor_summary_side_imageView"
+        android:layout_toEndOf="@+id/inductor_summary_imageView"
+        app:srcCompat="@drawable/inductor_up" />
+
+    <ImageView
+        android:id="@+id/inductor_summary_side_imageView"
+        android:layout_width="159dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        app:srcCompat="@drawable/inductor_side" />
+
+    <TextView
+        android:id="@+id/inductor_summary_textView"
+        android:layout_width="310dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/inductor_summary_side_imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:text="What is the component shown above"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/inductor_summary_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inductor_summary_textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/inductor_summary_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inductor_summary_textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:layout_toEndOf="@+id/inductor_summary_editText"
+        android:background="@drawable/buttons"
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/resistor_summary_imageView"
+        android:layout_width="90dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/resistor_summary_textView"
+        android:layout_below="@+id/inductor_summary_editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="6dp"
+        app:srcCompat="@drawable/resistors_basic" />
+
+    <ImageView
+        android:id="@+id/resistor_flat_summary_imageView"
+        android:layout_width="129dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/inductor_summary_editText"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/resistor_summary_imageView"
+        app:srcCompat="@drawable/resistor_side" />
+
+    <ImageView
+        android:id="@+id/resistor_side_summary_imageView"
+        android:layout_width="177dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/inductor_summary_submit_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="21dp"
+        android:layout_toEndOf="@+id/resistor_flat_summary_imageView"
+        app:srcCompat="@drawable/resistor_up" />
+
+    <TextView
+        android:id="@+id/resistor_summary_textView"
+        android:layout_width="315dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/resistor_side_summary_imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="61dp"
+        android:text="Name the Component above"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/resistor_summary_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resistor_summary_textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/resistor_summary_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resistor_summary_textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="41dp"
+        android:layout_toEndOf="@+id/resistor_summary_editText"
+        android:background="@drawable/buttons"
+        android:text="Submit" />
+
+    <ImageView
+        android:id="@+id/capacitor_summary_imageView"
+        android:layout_width="130dp"
+        android:layout_height="83dp"
+        android:layout_above="@+id/capacitor_summary_textView"
+        android:layout_below="@+id/resistor_summary_editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="9dp"
+        app:srcCompat="@drawable/types_of_capacitors" />
+
+    <ImageView
+        android:id="@+id/capacitor_flat_summary_imageView"
+        android:layout_width="124dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/resistor_summary_editText"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/capacitor_summary_imageView"
+        app:srcCompat="@drawable/capacitor_positive_top" />
+
+    <ImageView
+        android:id="@+id/capacitor_side_summary_imageView"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/resistor_summary_submit_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toEndOf="@+id/capacitor_flat_summary_imageView"
+        app:srcCompat="@drawable/capacitor_upright" />
+
+    <TextView
+        android:id="@+id/capacitor_summary_textView"
+        android:layout_width="315dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/capacitor_side_summary_imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="55dp"
+        android:text="Name the Component above"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/capacitor_summary_editText"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/capacitor_summary_textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/capacitor_summary_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/capacitor_summary_textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="43dp"
+        android:layout_toEndOf="@+id/resistor_summary_editText"
+        android:background="@drawable/buttons"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/next_summary_button"
+        android:layout_width="382dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/capacitor_summary_editText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="Next" />
+</RelativeLayout>

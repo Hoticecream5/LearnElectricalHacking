@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtherCapacitorsActivity">
+
+            <ImageView
+                android:id="@+id/OtherCapacitorsImageView"
+                android:layout_width="match_parent"
+                android:layout_height="266dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/excepional_capacitors" />
+
+            <TextView
+                android:id="@+id/OtherCapacitorsImageViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="There are other capacitors which are not polarised (they dont care which way you connect them) like the one above. It is an AC capacitor usually found in microwaves and it can take up to 2000volts.Thats pretty huge and can kill you "
+                android:textAlignment="center"
+                android:layout_below="@+id/OtherCapacitorsImageView"
+                />
+
+            <View
+                android:id="@+id/otherCapacitorDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/OtherCapacitorsImageViewDescription"
+                android:background="?android:attr/listDivider"
+                />
+
+
+    <Button
+        android:id="@+id/otherCapacitorButton"
+        android:layout_width="381dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/otherCapacitorDivider"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/buttons"
+        android:textSize="20sp"
+        android:text="Next" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoneActivity">
+
+    <TextView
+        android:id="@+id/done_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="512dp"
+        android:layout_marginTop="10dp"
+        android:text="As mentioned before all components have values and they have to be connected for current to flow (in order to work) and when we meet again
+there will be a quiz before we start based on:  Resistor values mainly then capacitor and inductors, circuit connection then we will do one practical example. STAY TUNED FOR APP UPDATES"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/close_app_btn"
+        android:layout_width="395dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/done_text_view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttons"
+        android:text="Done" />
+</RelativeLayout>

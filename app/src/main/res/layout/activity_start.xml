@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+    <TextView
+        android:id="@+id/get_started_textView"
+        android:layout_width="414dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="72dp"
+        android:text="This is a live app so electrical tricks and hacks will be uploaded frequently.
+this app also teaches you electronics equations"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/get_started_Button"
+        android:layout_width="360dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/get_started_textView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="GET STARTED" />
+
+</RelativeLayout>

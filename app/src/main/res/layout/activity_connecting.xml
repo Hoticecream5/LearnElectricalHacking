@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectingActivity">
+
+    <ImageView
+        android:id="@+id/resistorimageView"
+        android:layout_width="74dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="36dp"
+        app:srcCompat="@drawable/resistor_up"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="15dp" />
+
+    <ImageView
+        android:id="@+id/resistorCircuitImageView"
+        android:layout_width="406dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="82dp"
+        app:srcCompat="@drawable/connecting_resistor_dcvoltage" />
+
+    <TextView
+        android:id="@+id/resistorAdded"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_above="@+id/resistor_voltage_current_Btn"
+        android:layout_below="@+id/resistorCircuitImageView"
+        android:layout_marginTop="15dp"
+        android:text="Drag the resistor to complete the circuit note this is a dc circuit thus current is flowing in one direction we will get into details later"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/resistor_voltage_current_Btn"
+        android:layout_width="387dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/buttons"
+        android:text="Next"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

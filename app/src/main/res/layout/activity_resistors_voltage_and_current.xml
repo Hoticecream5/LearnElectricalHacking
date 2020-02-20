@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResistorsVoltageAndCurrentActivity">
+
+    <ImageView
+        android:id="@+id/voltagePlotImageView"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dc_voltage_plot" />
+
+    <ImageView
+        android:id="@+id/currentPlotImageView"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_below="@id/voltagePlotImageView"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/dc_current_pic" />
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="416dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/currentPlotImageView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="Done" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+            <ImageView
+                android:id="@+id/imageViewCapacitorTypes"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/types_of_capacitors"
+                />
+
+            <TextView
+                android:id="@+id/capacitor_image_desciption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:autoSizeTextType="uniform"
+                android:text="Seen above are what we call capacitors
+They are like a store room for power take it like a battery that can charge almost
+ instantly and then also looses power slowly even without being used"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_below="@+id/imageViewCapacitorTypes"
+            />
+
+    <View
+        android:id="@+id/capacitorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/capacitor_image_desciption"
+        android:background="?android:attr/listDivider"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewCapacitorSymbols"
+        android:layout_width="408dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/capacitorDivider"
+        android:src="@drawable/capacitor_symbols"
+        />
+
+    <TextView
+        android:id="@+id/capacitor_symbol_desciption"
+        android:layout_width="401dp"
+        android:layout_height="121dp"
+        android:layout_below="@+id/imageViewCapacitorSymbols"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="And those lines are capacitor symbols. So when you are reading anything electrical capacitors will be
+        represented by one of those symbols.Below ,beside or above them will be a number ending with F e.g 5f which is the value of the capacitor in electronics we call this value rating"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/capacitor_Button"
+        android:layout_width="380dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/capacitor_symbol_desciption"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttons"
+        android:padding="10dp"
+        android:text="Next"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

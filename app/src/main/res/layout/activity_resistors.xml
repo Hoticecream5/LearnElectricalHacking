@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResistorsActivity">
+
+    <ImageView
+        android:id="@+id/ResistorsImageView"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/resistors_basic" />
+
+    <TextView
+        android:id="@+id/ResistorsImageViewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/ResistorsImageView"
+        android:layout_marginTop="15dp"
+        android:text="Above is a picture of resistors. Resistors make it difficult for electricity to flow.And those colours are not for decoration they tell us about the value of the resistor"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+            <View
+                android:id="@+id/resistorDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/ResistorsImageViewDescription"
+                android:background="?android:attr/listDivider"
+                />
+
+    <ImageView
+        android:id="@+id/Resistor_symbols"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_below="@+id/resistorDivider"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/resistor_up" />
+
+    <TextView
+        android:id="@+id/resistor_symbols_description"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_below="@+id/Resistor_symbols"
+        android:layout_marginTop="10dp"
+        android:text="The symbol of the resistor is the one shown above.Take it for example you do music an A in music is not written as a letter but as a golf stick on a line or space that is the case also in electronics "
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@id/Resistor_symbols" />
+
+    <Button
+        android:id="@+id/resitorButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/resistor_symbols_description"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons"
+        android:text="Next" />
+</RelativeLayout>

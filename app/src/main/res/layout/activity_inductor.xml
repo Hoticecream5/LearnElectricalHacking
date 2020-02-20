@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InductorActivity">
+
+    <ImageView
+        android:id="@+id/imageViewInductorTypes"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:src="@drawable/inductors_1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/inductor_image_desciption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewInductorTypes"
+        android:layout_marginTop="10dp"
+        android:text="Seen above are what we call capacitors
+They are like a store room for power take it like a battery that can charge almost
+instantly and then also looses power slowly even without being used"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+        <View
+            android:id="@+id/inductorDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="?android:attr/listDivider"
+            android:layout_below="@+id/inductor_image_desciption"
+            />
+
+
+    <ImageView
+        android:id="@+id/imageViewInductorSymbols"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_below="@id/inductorDivider"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/capacitor_symbols" />
+
+    <TextView
+        android:id="@+id/inductor_symbol_desciption"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_below="@id/imageViewInductorSymbols"
+        android:layout_marginTop="10dp"
+        android:text="And those lines are capacitor symbols So when you are reading anything electrical capacitors will be represented by one of those symbols. Below ,beside or above them will be a number ending with F e.g 5f which is the value of the capacitor in electronics we call this value rating"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/inductor_Button"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@id/inductor_symbol_desciption"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/buttons"
+        android:text="Next"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
