@@ -14,7 +14,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="xxxx xxxxx xxxx" />
+            android:value="app-id" />
 
         <activity android:name=".MainActivity" />
         <activity android:name=".DoneActivity" />

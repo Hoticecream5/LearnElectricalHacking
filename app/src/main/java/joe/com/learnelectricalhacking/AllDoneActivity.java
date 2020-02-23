@@ -30,7 +30,7 @@ public class AllDoneActivity extends AppCompatActivity {
         //ads
         MobileAds.initialize(this);
 
-        AdLoader adLoader = new AdLoader.Builder(this,"xxxx xxxx xxxxxx xxx xxxx ")
+        AdLoader adLoader = new AdLoader.Builder(this,"ad-id")
                 .forUnifiedNativeAd(new UnifiedNativeAd.OnUnifiedNativeAdLoadedListener() {
                     @Override
                     public void onUnifiedNativeAdLoaded(UnifiedNativeAd unifiedNativeAd) {
